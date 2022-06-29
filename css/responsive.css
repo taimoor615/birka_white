@@ -3,18 +3,48 @@
         max-width:991px;
     }
 }
-@media all and (max-width:991px) {
+@media all and (max-width:992px) {
     .container{
         max-width:768px;
+    }
+    .inner-banner-text h1 {
+        font-size: 36px;
+    }
+    .text-wrap h3 {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+    .img-text-wrap {
+        gap: 32px;
+        margin-bottom: 40px;
     }
 }
 @media all and (max-width:768px) {
     .container{
         max-width:575px;
     }
+    .practice-inner {
+        padding: 80px 0;
+    }
+    .img-text-wrap {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .text-wrap h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .practice-inner.personal-injury .img-text-wrap {
+        margin-bottom: 0;
+    }
 }
 @media all and (max-width:575px) {
     .container{
         max-width:100%;
+    }
+}
+@media all and (max-width:540px) {
+    .inner-banner-text h1 {
+        font-size: 28px;
     }
 }
