@@ -44,8 +44,8 @@ p {
     font-family: var(--dm-sans-font);
     line-height: 1.7;
 }
-
-ul li {
+ul li{
+    font-family: var(--dm-sans-font);
     list-style: none;
 }
 
@@ -544,7 +544,6 @@ footer {
     font-size: 14px;
 }
 
-
 /* News Page */
 
 .news img {
@@ -747,4 +746,120 @@ section.news-areas-inner {
 
 .location {
     padding: 50px 0 120px;
+=======
+
+/*=================================
+         practice areas pages
+===================================*/
+
+.inner-banner {
+    display: grid;
+    place-content: center;
+    background: url(images/inner-banner.jpg) no-repeat;
+    background-size: cover;
+    height: 210px;
+}
+
+.inner-banner-text h1 {
+    font-size: 48px;
+    color: var(--white-color);
+    font-weight: var(--bold-weight);
+}
+
+.practice-inner {
+    padding: 120px 0;
+}
+
+.img-text-wrap {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 44px;
+    margin-bottom: 50px;
+}
+
+.img-wrap img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text-wrap h3 {
+    font-size: 30px;
+    color: var(--secondary-color);
+    font-weight: var(--bold-weight);
+    margin-bottom: 26px;
+}
+
+.text-wrap p, .text-wrap li {
+    font-size: 16px;
+    color: var(--dark-grey-color);
+    font-weight: var(--regular-weihgt);
+}
+
+.text-wrap ul {
+    padding-left: 18px;
+    margin-bottom: 18px;
+}
+
+.text-wrap li {
+    list-style: unset;
+}
+
+.text-wrap li::marker {
+    color: var(--secondary-color);
+}
+
+.text-wrap li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.text-wrap p:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+
+
+/*=================================
+MEDIA QUERIES
+===================================*/
+
+@media all and (max-width: 992px) {
+
+    .inner-banner-text h1 {
+        font-size: 36px;
+    }
+    .text-wrap h3 {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+    .img-text-wrap {
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .practice-inner {
+        padding: 80px 0;
+    }
+    .img-text-wrap {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .text-wrap h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .practice-inner.personal-injury .img-text-wrap {
+        margin-bottom: 0;
+    }
+
+}
+
+@media all and (max-width: 540px) {
+
+    .inner-banner-text h1 {
+        font-size: 28px;
+    }
 }
