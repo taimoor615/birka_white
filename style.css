@@ -44,6 +44,10 @@ p {
     font-family: var(--dm-sans-font);
     line-height: 1.7;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
 ul li{
     font-family: var(--dm-sans-font);
     list-style: none;
@@ -88,10 +92,15 @@ h2:after {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.sec-padd{
+    padding: 120px 0px;
+}
 /*==========================
             Header
 ============================*/
+.toggle-icon{
+    display: none;
+}
 .top-bar-inner-main {
     display: flex;
     justify-content: space-between;
@@ -128,7 +137,9 @@ h2:after {
 }
 
 .free-consultation a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 230px;
     background-color: var(--primary-color);
     padding: 15px 10px;
@@ -137,23 +148,23 @@ h2:after {
     text-transform: uppercase;
     text-align: center;
     border: 1px solid transparent;
+    font-weight: var(--bold-weight);
 }
-
+.free-consultation a img{
+    margin-right: 8px;
+}
 .free-consultation a:hover {
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
-.free-consultation a:hover i {
-    color: var(--primary-color);
+    /* background-color: transparent; */
+    /* border: 1px solid var(--primary-color); */
+    color: var(--sharp-color);
 }
 
 header {
     background-color: var(--primary-color);
+}
+header nav{
     padding: 11px 0;
 }
-
 header nav ul {
     margin: 0 auto;
     display: block;
@@ -248,10 +259,6 @@ header nav ul li a {
 /*==========================
             Main
 ============================*/
-.firm-sec {
-    padding: 120px 0px;
-}
-
 .firm-inner-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -289,7 +296,6 @@ header nav ul li a {
 
 .practice-areas-main {
     background-color: var(--grey-bg-color);
-    padding: 120px 0px;
 }
 
 .practice-head {
@@ -320,7 +326,7 @@ header nav ul li a {
     text-align: center;
     padding: 50px 50px 30px;
     width: 100%;
-    max-width: 412px;
+    max-width: 402px;
 }
 
 .practice-area h3 {
@@ -389,10 +395,6 @@ header nav ul li a {
 .attroney p {
     margin-bottom: 40px;
     color: var(--light-black-color);
-}
-
-.cases-sec {
-    padding: 120px 0px;
 }
 
 .active {
@@ -497,11 +499,15 @@ footer {
 .footer-cols-main .footer p {
     font-size: 14px;
 }
-
+.footer-cols-main .footer p:last-child{
+    margin-bottom: 0;
+}
 .footer-cols-main .footer ul li {
     margin-bottom: 20px;
 }
-
+.footer-cols-main .footer ul li:last-child{
+    margin-bottom: 0;
+}
 .contact-footer p {
     margin-bottom: 20px;
 }
@@ -815,52 +821,4 @@ section.news-areas-inner {
 
 .text-wrap p:not(:last-child) {
     margin-bottom: 18px;
-}
-
-
-
-/*=================================
-MEDIA QUERIES
-===================================*/
-
-@media all and (max-width: 992px) {
-
-    .inner-banner-text h1 {
-        font-size: 36px;
-    }
-    .text-wrap h3 {
-        font-size: 26px;
-        margin-bottom: 14px;
-    }
-    .img-text-wrap {
-        gap: 32px;
-        margin-bottom: 40px;
-    }
-
-}
-
-@media all and (max-width: 768px) {
-
-    .practice-inner {
-        padding: 80px 0;
-    }
-    .img-text-wrap {
-        grid-template-columns: 1fr;
-        margin-bottom: 20px;
-    }
-    .text-wrap h3 {
-        font-size: 24px;
-        margin-bottom: 12px;
-    }
-    .practice-inner.personal-injury .img-text-wrap {
-        margin-bottom: 0;
-    }
-
-}
-
-@media all and (max-width: 540px) {
-
-    .inner-banner-text h1 {
-        font-size: 28px;
-    }
 }

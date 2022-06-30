@@ -8,28 +8,201 @@
     .news_inner {
         justify-content: center;
     }
+    .sec-padd{
+        padding: 80px 0px;
+    }
+    .attorneys-sec{
+        padding: 80px 0 0 ;
+    }
+    .footer.footer-1 {
+        padding-right: 100px;
+    }
 }
-
-
-
 @media all and (max-width:1024px) {
     .contact-form {
         padding: 50px 20px;
     }
 }
-
-
-
-
-@media all and (max-width:991px) {
+@media all and (max-width:992px) {
+    h2{
+        font-size: 30px;
+    }
     .container {
         max-width: 768px;
     }
+    .toggle-icon{
+        display: block;
+    }
+    .toggle-icon i{
+        font-size: 25px;
+    }
+    .topbar-main .container,header .container{
+        max-width: 100%;
+    }
+    header{
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+    }
+    header.menu-opened{
+        background-color: var(--primary-color);
+        display: block;
+    }
+    header nav{
+        display: none;
+        padding: 15px 0px;
+    }
+    header nav ul li{
+        display: block;
+        padding-right: 0 !important;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    header nav ul li:last-child{
+        margin-bottom: 0;
+    }
+    .brand-info {
+        display: none;
+    }
+    .banner-inner-content h1{
+        font-size: 36px;
+    }
+    .banner-inner-content h2{
+        font-size: 25px;
+        margin: 15px 0px;
+    }
+    .banner-inner-content p{
+        margin-bottom: 20px;
+    }
+    .banner-inner-content a{
+        padding: 15px 25px;
+    }
+    .sec-padd{
+        padding: 50px 0px;
+    }
+    .attorneys-sec{
+        padding: 50px 0 0;
+    }
+    .firm-inner-main{
+        grid-template-columns: 1fr;
+    }
+    .firm-left-img{
+        order: 2;
+        margin-top: 30px;
+    }
+    .firm-right-content p{
+        margin-bottom: 25px;
+    }
+    .practice-areas-inner{
+        grid-gap: 25px;
+    }
+    .attroney{
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .attroney p{
+        margin-bottom: 20px;
+    }
+    .attorneys-inner .attroney:nth-child(2n-4){
+        grid-template-columns: 1fr;
+    }
+    .attorneys-inner .attroney:nth-child(2n-4) .attroney-img {
+        order: 0;
+    }
+    .attroney-img{
+        margin-bottom: 30px;
+    }
+    .practice-area{
+        max-width: 342px;
+    }
+    .inner-banner-text h1 {
+        font-size: 35px;
+    }
+    .text-wrap h3 {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+    .img-text-wrap {
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+    .footer-cols-main{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media all and (max-width:768px) {
     .container {
         max-width: 575px;
+    }
+    .banner-content-main{
+        position: relative;
+        background-color: var(--primary-color);
+        padding: 15px;
+    }
+    .banner-inner-content h1{
+        font-size: 30px;
+    }
+    .banner-inner-content h2{
+        font-size: 22px;
+        border-left: 0px solid transparent;
+        padding-left: 0;
+    }
+    .banner-inner-content{
+        align-items: center;
+    }
+    .banner-inner-content p{
+        padding-right: 0;
+        text-align: center;
+    }
+    .banner-img-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inner-banner{
+        height: 100px;
+        margin-bottom: 50px;
+    }
+    .cases-tabs ul li{
+        padding-right: 30px;
+    }
+    .cases-tabs ul li a{
+        font-size: 18px;
+    }
+    .cases-posts{
+        grid-template-columns: 1fr;
+    }
+    .cases-posts .case-post{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .practice-inner {
+        padding: 0px 0 80px;
+    }
+    .img-text-wrap {
+        grid-template-columns: 1fr;
+        margin-bottom: 0px;
+    }
+    .text-wrap h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .practice-inner.personal-injury .img-text-wrap {
+        margin-bottom: 0;
+    }
+    footer{
+        padding: 30px 0px;
+    }
+    .footer.footer-1 {
+        padding-right: 20px;
+    }
+    .footer-cols-main .footer h2{
+        margin-bottom: 20px;
+    }
+    .footer-cols-main .footer ul li {
+        margin-bottom: 10px;
     }
 
     /* news Page */
@@ -77,11 +250,64 @@
     .contact-form-inner .submit a {
         max-width: 100%;
     }
-
 }
 
 @media all and (max-width:575px) {
     .container {
         max-width: 100%;
     }
+    h2{
+        font-size: 25px;
+    }
+    .brad-logo {
+        max-width: 200px;
+    }
+    .banner-inner-content h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .banner-inner-content h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .practice-inner {
+        padding: 0px 0 50px;
+    }
+    .sec-padd{
+        padding: 30px 0px;
+    }
+    .inner-banner-text h1 {
+        font-size: 25px;
+    }
+    .firm-right-content p{
+        margin-bottom: 15px;
+    }
+    .attorneys-sec{
+        padding: 30px 0 0;
+    }
+    .attroney p {
+        margin-bottom: 15px;
+    }
+    .cases-tabs ul li {
+        padding-right: 0px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .contact-footer p:not(.contact-footer p:last-child) {
+        margin-bottom: 15px;
+    }
+    .footer.footer-1 {
+        padding-right: 0px;
+    }
+    .footer-cols-main {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    .footer-cols-main .footer h2 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+}
+@media all and (max-width:540px) {
+    
 }
