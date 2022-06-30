@@ -44,6 +44,10 @@ p {
     font-family: var(--dm-sans-font);
     line-height: 1.7;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
 ul li{
     font-family: var(--dm-sans-font);
     list-style: none;
