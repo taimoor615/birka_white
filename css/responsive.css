@@ -161,9 +161,18 @@
         flex-direction: column;
         justify-content: center;
     }
+    
+    .img-text-wrap {
+        gap: 20px;
+    }
+
+    .img-wrap {
+        margin-bottom: 0;
+    }
+
     .inner-banner{
         height: 100px;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
     .cases-tabs ul li{
         padding-right: 30px;
@@ -208,12 +217,7 @@
     /* news Page */
 
     .news {
-        /* max-width: 100%; */
         margin: 20px 0;
-    }
-
-    section.news-areas-inner {
-        padding: 50px 0;
     }
 
     /* Contact Page */
@@ -307,7 +311,4 @@
         margin-bottom: 15px;
         font-size: 20px;
     }
-}
-@media all and (max-width:540px) {
-    
 }
